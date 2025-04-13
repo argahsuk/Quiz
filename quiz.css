@@ -187,12 +187,13 @@ footer img:hover{
     }
     .opti{
         width: 55vw;
-        height: 4vh;
+        height: auto;
     }
    #btn{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top: 2vh;
     }
     #quesh{
         font-size: small;
