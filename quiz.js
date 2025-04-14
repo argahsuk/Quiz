@@ -25,8 +25,14 @@ function selectOption(radioId) {
 let options;
 let questiondata;
 async function fq() {
+    // clearing options
+    for (let i = 1; i < 5; i++) {
+        document.getElementById(`opt${i}`).checked=false;
+    }
+    // reseting bgc 
     document.querySelector('#right').style.backgroundColor = "";
     document.querySelector('#newq').innerHTML='Next question'
+    // fetching api
     let response = await fetch('https://opentdb.com/api.php?amount=1&type=multiple');
     let data = await response.json()
     questiondata= data.results[0];
