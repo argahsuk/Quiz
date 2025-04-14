@@ -1,6 +1,6 @@
 // scrolling facts 
 let scrollingElement = document.querySelector('#left');
-let n = 1.1;
+let n = 1.25;
   setInterval(function()  {
       let x =  scrollingElement.scrollTop;
       scrollingElement.scrollTop += n;
@@ -9,7 +9,7 @@ let n = 1.1;
     }
     },20);
 scrollingElement.addEventListener("mouseleave",function(){
-    n=1.1;
+    n=1.25;
 })
 scrollingElement.addEventListener("mouseenter",function(){
     n=0;
