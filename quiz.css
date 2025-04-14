@@ -183,11 +183,11 @@ footer img:hover{
 
 @media (max-width:650px) {
     #opt{
-        grid-template-columns:auto  ;
+        grid-template-columns:auto auto ;
     }
     .opti{
-        width: 55vw;
-        height: auto;
+        width: 47vw;
+        height: auto ;
     }
    #btn{
         display: flex;
@@ -197,5 +197,28 @@ footer img:hover{
     }
     #quesh{
         font-size: small;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #right{
+        background:#decbbf;
+        width: 100%;
+        border-right: 1px solid #c2bfbf;
+        height:70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #left {
+        width: 100%;
+        border-right: 3px solid #ccc;
+        padding:5px;
+        overflow-y: scroll;
+        height:30vh;
+        margin: 0;padding: 0;
+        background-color: #ede0d4;
+        scrollbar-width: none;
     }
 }
